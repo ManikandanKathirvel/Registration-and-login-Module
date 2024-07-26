@@ -47,7 +47,7 @@ public class UserController {
 
 		System.out.println("Attempting to register user: " + user);
 		if (isUserAlreadyRegistered(user.getEmail())) {
-			model.addAttribute("registrationError", "Email Already Exist please login!!!");
+			model.addAttribute("registrationError", "sorry Email Already Exist please login!!!");
 			model.addAttribute("showModel", true);
 		} else {
 			User registeredUser = userser.register(user.getName(), user.getEmail(), user.getPassword());
